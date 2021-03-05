@@ -1,20 +1,24 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { OrbitListComponent } from './orbit-list/orbit-list.component';
+import { OrbitCountsComponent } from './orbit-counts/orbit-counts.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+		  OrbitListComponent,
+		  OrbitCountsComponent
       ],
     }).compileComponents();
   }));
 
-//   it('should create the app', () => {
-//     const fixture = TestBed.createComponent(AppComponent);
-//     const app = fixture.debugElement.componentInstance;
-//     expect(app).toBeTruthy();
-//   });
+  it('should create the app', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.debugElement.componentInstance;
+    expect(app).toBeTruthy();
+  });
 
 //   it(`should have as title 'orbit-report'`, () => {
 //     const fixture = TestBed.createComponent(AppComponent);
