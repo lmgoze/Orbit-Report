@@ -1,7 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { OrbitListComponent } from './orbit-list/orbit-list.component';
-// import { OrbitCountsComponent } from './orbit-counts/orbit-counts.component';
+import { OrbitCountsComponent } from './orbit-counts/orbit-counts.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -9,7 +9,7 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
 		  OrbitListComponent,
-		  //OrbitCountsComponent
+		  OrbitCountsComponent
       ],
     }).compileComponents();
   }));
