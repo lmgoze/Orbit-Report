@@ -14,7 +14,8 @@ export class Satellite {
 		this.operational = operational;
    }
 	
-	// TODO: #7 create isSpaceDebris check
+	// TODO: #6.1 create isSpaceDebris check
+	
 	// isSpaceDebris(): boolean {
 	// 	return this.type === 'Space Debris';
    // }
