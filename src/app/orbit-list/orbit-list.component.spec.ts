@@ -3,23 +3,29 @@ import { OrbitListComponent } from './orbit-list.component';
 import { Satellite } from '../satellite';
 import { AppComponent } from '../app.component';
 import { By } from "@angular/platform-browser";
+import { DebugElement } from '@angular/core';
 
 describe('OrbitListComponent', () => {
-  let component: OrbitListComponent;
-  let fixture: ComponentFixture<OrbitListComponent>;
-
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ OrbitListComponent ]
-    })
-    .compileComponents();
-  }));
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(OrbitListComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+	let component: OrbitListComponent;
+	let fixture: ComponentFixture<OrbitListComponent>;
+	let element: DebugElement;
+ 
+	beforeEach(async(() => {
+	  TestBed.configureTestingModule({
+		 declarations: [ OrbitListComponent ]
+	  })
+	  .compileComponents();
+	}));
+ 
+	beforeEach(() => {
+	  fixture = TestBed.createComponent(OrbitListComponent);
+	  component = fixture.debugElement.componentInstance;
+	  element = fixture.debugElement;
+ 
+	  component.satellites = [];
+ 
+	  fixture.detectChanges();
+	});
 
   it('should create', () => {
     expect(component).toBeTruthy();
