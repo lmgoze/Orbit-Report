@@ -5,6 +5,7 @@ export class Satellite {
 	launchDate: string;
 	orbitType: string;
 	operational: boolean;
+	isSpaceDebris: Function;
 
 	constructor(name: string, type: string, launchDate: string, orbitType: string, operational: boolean) {
 		this.name = name;
