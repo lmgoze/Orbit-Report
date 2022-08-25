@@ -2,7 +2,7 @@
 	cursor: pointer;
 	color: #dd5;
 }
-
+/* 3b) add the warning to the <td> to the satellite object for display */
 .warning {
 	background-color: #da8a8a;
 }
@@ -26,3 +26,8 @@ th, td {
 	margin: 5px 10px;
 	padding: 6px;
 }
+/* Bonus Mission Zebra Stripes - w3schools. choose pair of colors */
+.getStripes:nth-child(even) {
+	background-color: darkgrey;
+	color: bisque;
+  }

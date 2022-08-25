@@ -8,8 +8,9 @@ import { Satellite } from '../satellite';
 })
 
 export class OrbitListComponent implements OnInit {
-
+// Input refers to the data being sent into the component
   @Input() satellites: Satellite[];
+  
   constructor() { }
 
   ngOnInit() {

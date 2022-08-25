@@ -13,11 +13,12 @@ export class Satellite {
 		this.orbitType = orbitType;
 		this.operational = operational;
    }
-	
+	// TODO 3a: fix isSpaceDebris check - Repair the isSpaceDebris method in the Satellite class. isSpaceDebris returns true if the satellite type is 'Space Debris', and it returns false otherwise.
 	isSpaceDebris(): boolean {
-		return true;
+		//return true;
+		return this.type === "Space Debris";
    }
 
 }
 
-// TODO 3a: fix isSpaceDebris check
+
